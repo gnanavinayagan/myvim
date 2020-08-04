@@ -1,2 +1,2 @@
-VIM related config files
+VIM config files
 
