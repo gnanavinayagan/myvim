@@ -1,0 +1,269 @@
+ctrl + o -  back
+ctrl + i - forward
+
+gg - beginning of the file
+dd - delete entire line
+cc - delete + insert entire line
+
+
+i - insert at before
+I - insert at beginning
+
+a - insert after
+A - isnert at end
+
+o - insert next previous line
+O - insert new previous line
+
+d - delete 
+
+i - insert mode
+r - replace mode
+c - d + insert mode
+
+~ - change case
+g~w - change case
+g~~ - change case line
+
+gUw - make upper case
+guw - make lower case
+
+J - append two lines with smarter spaces
+gJ - append two lines without smarter spaces
+
+
+Search & Replace :
+===================
+	; - next search results on line
+	, - previous serch reslulte on line
+
+	f - forward search on same line
+	F - backward search on same line
+
+	t - forward till search
+	T - backward till searchs
+
+
+
+	/and + n -  from first same direction
+	/and + N -  from first oppo direction
+
+	?is + n - from last same direction
+	?is + N - from last opposite direction
+
+	* - next occurence of the word (with n or N)
+	# - previous occurence of the word
+
+
+:set is
+:set hls / hlsearch
+
+:set nohls
+:set no
+
+
+:s/old/new - one occurence
+:s/old/new/g - all occurence in same line
+
+:[range]s/old/new/g
+	$ - last line in the file
+	. - current lien in the file
+	% - enitre file, same as 1,$
+
+	/pattern-1/,/pattern-2/
+	/Global/,/Local/s/net/org/g
+
+	:/Local/,$s/net/org
+	s#/var/spool#/usr/local#g
+
+:set nu
+:set nonu
+:set nu!
+:set nu?
+
+
+
+start editing:
+
+i - from current position
+I - from beginning of the line
+
+a - from next postition
+A - from end of the line
+
+o - insert a line after
+O - insert a line before
+
+
+7. select with objects [instead of motions]: 
+============================================
+
+d or i or v (visual mode)
+
+[action] a or i (range for) [range]
+
+daw
+diw
+
+das
+dis
+
+dap
+dip
+
+di[ or di] - to delete content of the brackets
+da[ or da]
+
+di( or di) or dib
+
+da{ or da} or daB
+
+da< or da> or dat
+
+da" or da' or da`
+
+
+
+cit - change entire content within the tag
+
+
+a includes delimiter and boundaries
+i doesnot include boundaries
+
+[operator]a[object]
+[operator]i[object]
+
+
+
+VISUAL MODE:
+============
+
+v - visula mode
+gv - with previous selection
+
+
+viw - visually select that word only
+vaw - visually select that word includeing white space
+
+
+v - visual mode
+V - linewise visal mode
+ctrl + v - block selection
+
+gv - with previous selection
+
+O - right <-> left
+o - top <-> bottom
+
+select and
+> - shift right
+< - shift left
+
+>> - shift right one line
+<< - shift left one line
+
+
+
+
+:set shiftwidth 4
+:set tabstop 4
+:set expandtab -  expands tab with spaces for >
+:set list! - for toggling list mode
+
+
+^I - tab character
+^[ - esc
+^M - enter
+^
+$ - end of line
+
+
+
+ce or center 40 
+le or left 
+ri or right 40
+
+
+
+buffers:
+========
+
+:e or :E
+
+<Ctrl>^ or :b# - previous opened buffer
+
+:buffers or :ls or :files 
+
+:buffer 2 or :b2 or :b buf-ant.txt
+
+:bnext or :bn
+:bprevious or :bp
+
+:bfirst or :bf
+:blast  or :bl
+
+:bdelete or :bd - delete the buffer and close the file
+:badd 
+
+:bufdo set nu - setting this for all buffers
+
+:wal or :qall or :ball 
+
+set hidden - don't unload it from memory
+
+
+windows:
+========
+
+:sp or <Ctrl>w + s - horizontal split
+:vs or <Ctrl>w + v - vertical split
+:q  or <Ctrl>w + q - close a window
+:vs buf-cat.txt
+
+:on or :only or <Ctrl>w + q - keep only window 
+
+
+
++ or - - increase or dec height
+> or < - increase or dec width
+_ or | - maximize height or width
+=      - uniform length
+
+
+r or R - rotates right or left
+
+H or J or K or L - move window 
+
+:ba or :ball
+
+:windo - do in all windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
