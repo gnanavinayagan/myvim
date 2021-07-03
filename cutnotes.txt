@@ -1,0 +1,23 @@
+cut command:
+
+	for column formatted data
+
+1. cut -c3 file.txt 
+
+2. cut -c3-8 file.txt
+
+3. cut -c3- file.txt
+
+4. cut -c-10 file.txt
+
+5. cut -d "|" -f2 file2.txt --- separed with |, display only field 2
+
+6. cut -d "|" -f3-5 file.txt
+
+6. cut -d "|" -f3- file.txt
+
+7. cut -d "|" -f-5 file.txt
+
+8. cut -d "|" --complement -f2 file.txt ---> all the columns except given columns
+
+9. 

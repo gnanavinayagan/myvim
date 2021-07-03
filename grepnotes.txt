@@ -1,0 +1,31 @@
+Grep:
+
+search:
+
+1. grep amit file.txt
+
+2. grep amit file.txt file2.txt
+
+3. grep amit *.*
+
+4. grep -n "amit" file.txt
+
+5. grep -n "i386" file.txt
+
+6. grep -n -l "amit" *.txt ---  display only the file names 
+
+7. grep -w "John" file.txt  --- complete word 
+
+8. grep -v John file.txt --- exclude specific lines
+
+9. grep -B 2 -A 1 Simon file.txt --- before 2 After 1
+
+10. grep -C 3 "Simon" file.txt
+
+11. grep -c "simon" file.txt --- count 
+
+12. grep -e "John" -e "alex" file.txt --- or conditions on search
+
+13. egrep 'John|Ajay' file.txt
+
+

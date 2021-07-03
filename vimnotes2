@@ -1,0 +1,11 @@
+h,k,j,l - directions
+
+b,B - one word back
+f,F - one word front 
+
+. - previously executed command
+
+
+ctrl + f - page down
+ctrl + b - page up
+

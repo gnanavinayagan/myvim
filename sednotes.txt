@@ -1,0 +1,89 @@
+Sed comands:
+
+'command/find/replace/projcomand'
+
+
+1. printing second line twice	
+	set '2p' file.txt
+
+2. printing second line:
+	sed -n '2p' file.txt:
+
+3. last line: 
+	sed  -n '$p' file.txt
+
+4. display range of lines:
+	sed -n '2,4p' file.txt
+
+5. exclude specidfic line:
+	sed -n '2!p' file.txt
+
+6. except specific lines
+	sed -n '2,4!p' file.txt
+
+
+context search:
+1. Specific word
+	sed -n '/Amit/p' file.txt
+	sed -n '/[Aa]mit/p' file.txt
+
+2. specific word and store into a file	
+	sed -n '/[Aa]/w out.txt' file.txt
+
+
+substitute:
+1. single
+	sed 's/1000/5000' file.txt
+2. multiple
+	sed -e 's/10000/150000' -e 's/20000/25000' file.txt
+3. condition based:
+	sed '/Johny/s/10000/13000' file.txt
+	sed '/Ajay/s/20000/250000' file.txt
+4. delete:
+	sed '/Amit/d' file.txt
+	sed '/[Aa]mit/d' file.txt
+5. Insert to a particular line
+	sed '1i Welcome to data' file.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
