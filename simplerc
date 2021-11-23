@@ -1,0 +1,10 @@
+set nu rnu ru stal=2
+set is ic scs
+set scrolloff=5
+set showcmd wildmenu 
+set ai et ts=4 sw=4
+set sb spr
+set nobackup nowritebackup 
+set history=1000
+
+autocmd FileType yaml set nu ai et ts=2 sw=2 cuc 
